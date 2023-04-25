@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
+    driver-class-name: com.mysql.cj.jdbc.Driver    #mysql驱动包
+    url: jdbc:mysql://localhost:3306/mycnblog?characterEncoding=utf8
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mapper/**Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.zcx: debug
+server:
+  port: 88
